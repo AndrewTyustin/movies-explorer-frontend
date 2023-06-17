@@ -9,15 +9,15 @@ function Portfolio() {
         <h2 className="portfolio__heading">Портфолио</h2>
         <ul className="portfolio__wrapper list">
           <PortfolioProject
-            url={"https://github.com/elrouss/how-to-learn"}
+            url={"https://github.com/AndrewTyustin/how-to-learn"}
             heading={"Статичный сайт"}
           />
           <PortfolioProject
-            url={"https://github.com/elrouss/russian-travel"}
+            url={"https://github.com/AndrewTyustin/russian-travel"}
             heading={"Адаптивный сайт"}
           />
           <PortfolioProject
-            url={"https://github.com/elrouss/react-mesto-api-full-gha"}
+            url={"https://github.com/AndrewTyustin/react-mesto-api-full-gha"}
             heading={"Одностраничное приложение"}
           />
         </ul>

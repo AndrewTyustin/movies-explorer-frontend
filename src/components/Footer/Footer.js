@@ -21,7 +21,7 @@ function Footer() {
           </a>
           <a
             className="link footer__link"
-            href="https://github.com/elrouss"
+            href="https://github.com/AndrewTyustin"
             rel="noreferrer"
             target="_blank"
           >
