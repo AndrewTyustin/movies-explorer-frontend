@@ -141,7 +141,7 @@
   background-color: transparent;
 
   &::before {
-    content: url(../assets/icons/icon-user.svg);
+    content: url(../../assets/icons/icon-user.svg);
     position: absolute;
     top: 0;
     right: 0;
@@ -163,6 +163,8 @@
     $letter-spacing: 0
   );
   color: $color-accent-2;
+
+  background-color: transparent;
 
   @media screen and (max-width: $media-mobile-l) {
     $font-size: 1.2rem;
