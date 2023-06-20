@@ -1,5 +1,5 @@
 // URLS
-export const URL_BASE = "https://andrewtyustin.students.nomoredomains.rocks/";
+export const URL_BASE = "https://andrewtyustin.students.nomoredomains.rocks";
 export const URL_BASE_LOCAL = "http://localhost:3000"; // for development
 export const URL_BEATFILM_MOVIES =
   "https://api.nomoreparties.co/beatfilm-movies";
