@@ -1,14 +1,21 @@
-import { URL_BEATFILM_MOVIES } from "./constants.js";
+import { MOVIE_API } from "./config";
 
-function checkResponse(res) {
-  if (res.ok) {
-    return res.json();
-  } else {
-    Promise.reject(`Ошибка: ${res.status}/${res.statusText}`);
+class MoviesApi {
+  constructor({ baseUrl }) {
+    this._baseUrl = baseUrl;
+  }
+
+  async getMovies() {
+    const url = `${this._baseUrl}/beatfilm-movies`;
+    const res = await fetch(url);
+
+    if (!res.ok) throw new Error(res.status);
+
+    const data = await res.json();
+    return data;
   }
 }
 
-export function getMovies() {
-  return fetch(URL_BEATFILM_MOVIES)
-    .then((res) => checkResponse(res))
-}
+const moviesApi = new MoviesApi({ baseUrl: MOVIE_API.BASE_URL });
+
+export default moviesApi;
